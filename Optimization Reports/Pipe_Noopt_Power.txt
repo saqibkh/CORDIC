@@ -1,0 +1,52 @@
+Loading db file '/usr/local/packages/cadence_2007/FreePDK45/osu_soc/lib/files/gscl45nm.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : pipelined
+Version: K-2015.06-SP4
+Date   : Sun Dec 10 17:22:15 2017
+****************************************
+
+
+Library(s) Used:
+
+    gscl45nm (File: /usr/local/packages/cadence_2007/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  14.7995 uW   (72%)
+  Net Switching Power  =   5.6848 uW   (28%)
+                         ---------
+Total Dynamic Power    =  20.4843 uW  (100%)
+
+Cell Leakage Power     = 145.1362 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       9.3355e-03        2.6433e-03        5.4483e+04        6.6461e-02  (  40.13%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  5.4640e-03        3.0415e-03        9.0654e+04        9.9159e-02  (  59.87%)
+--------------------------------------------------------------------------------------------------
+Total          1.4799e-02 mW     5.6848e-03 mW     1.4514e+05 nW         0.1656 mW
